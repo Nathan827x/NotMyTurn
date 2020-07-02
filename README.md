@@ -31,6 +31,8 @@ Why use NotMyTurn:
 * Helps people stay honest with chores and allows people to stay on top of things.
 * Split the work up evenly. If someone doesn't like a chore, put their name in another chore twice. Be creative :)
 
+If you're interested on what is being worked on and what is in the backlog you can look at my [kanban board](https://trello.com/b/Yo25p1pp). It's not pretty yet but it'll get there!
+
 ### Built With
 This is a fork from a tutorial I followed. (https://github.com/NathanWang2/TodoReactExpress)
 
