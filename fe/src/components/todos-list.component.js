@@ -41,7 +41,7 @@ export default class TodosList extends Component {
 
         return (
             <div>
-                <p>In the Todo List Component</p>
+                <h2>FANCY HOUSE NAME's Chores</h2>
                 <table className="table table-striped" style={{ marginTop: 20 }} >
                     <thead>
                         <tr>
