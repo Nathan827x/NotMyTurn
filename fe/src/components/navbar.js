@@ -16,12 +16,12 @@ export function NavBar() {
                         <Link to="/create" className="nav-link">Create Todo</Link>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Signup/Signin</a>
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <a className="nav-link" href="/">Signup/Signin</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Logout</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/">Logout</a>
                     </li>
                 </ul>
             </div>
