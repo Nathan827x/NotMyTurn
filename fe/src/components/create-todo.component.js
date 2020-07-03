@@ -68,7 +68,7 @@ export default class CreateTodo extends Component {
     render() {
         return (
             <div>
-                <h3> Create New Todo</h3>
+                <h2> Create Chore</h2>
 
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
@@ -93,6 +93,8 @@ export default class CreateTodo extends Component {
                         />
                     </div>
 
+                    {/* TODO: Replace this with frequency.
+                    This is something that can be implamented later */}
                     <div className="form-group">
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
