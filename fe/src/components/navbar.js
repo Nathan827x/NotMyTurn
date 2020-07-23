@@ -27,13 +27,12 @@ class NavBar extends Component {
                         </li>
                     </ul>
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <Link to="/auth" className="nav-link">Signup/Signin</Link>
-                        </li>
                         {this.props.loggedIn ?
                             <li className="nav-item">
                                 <a className="nav-link" href="/" onClick={signOut}>Logout</a>
-                            </li> : null
+                            </li> : <li className="nav-item">
+                                <Link to="/auth" className="nav-link">Signup/Signin</Link>
+                            </li>
                         }
                     </ul>
                 </div>

@@ -18,7 +18,6 @@ class App extends Component {
             uid: ''
         }
 
-        this.test = this.test.bind(this);
         this.updateInfo = this.updateInfo.bind(this);
     }
 
@@ -26,20 +25,17 @@ class App extends Component {
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
                 // User is signed in.
-                const displayName = user.displayName;
+                // const displayName = user.displayName;
                 const email = user.email;
                 // const emailVerified = user.emailVerified;
                 const uid = user.uid;
-                const providerData = user.providerData;
+                // const providerData = user.providerData;
 
                 this.updateInfo(email, uid);
             } else {
                 console.debug("No User Logged In")
-                // User is signed out.
-                // document.getElementById('sign-in-status').textContent = 'Signed out';
-                // document.getElementById('sign-in').textContent = 'Sign in';
-                // document.getElementById('account-details').textContent = 'null';
             }
+
         }.bind(this), function (error) {
             console.log(error);
         }).bind(this);
