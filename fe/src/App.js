@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import firebase, { authPage, authConfig } from './firebase';
+import firebase from './firebase';
 
 import TodoList from './components/todos-list.component.js';
 import EditTodo from './components/edit-todo.component';
@@ -46,12 +46,6 @@ class App extends Component {
             email,
             uid
         })
-    }
-
-    test() {
-        console.debug("In the test method");
-
-        authPage.start('#firebaseui-auth-container', authConfig);
     }
     render() {
         return (
