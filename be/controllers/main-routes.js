@@ -34,14 +34,14 @@ module.exports = function (app) {
     app.get('/', (req, res) => {
         // MOCK DATA
         const MockData = [{
+            chore_name: "Dishes",
             todo_description: "This is the desc",
-            todo_responsible: "NOT ME",
-            todo_priority: "Medium"
+            todo_responsible: ["NOT ME", "Second person"],
         },
         {
+            chore_name: "Mopping",
             todo_description: "This is the other desc",
-            todo_responsible: "Still not me",
-            todo_priority: "High"
+            todo_responsible: ["person1", "person 2"],
         }]
 
         res.send(MockData)
