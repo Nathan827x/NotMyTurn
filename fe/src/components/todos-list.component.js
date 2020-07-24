@@ -41,6 +41,7 @@ export default class TodosList extends Component {
 
         return (
             <div>
+                {this.props.userInfo.email}
                 <h2>FANCY HOUSE NAME's Chores</h2>
                 <table className="table table-striped" style={{ marginTop: 20 }} >
                     <thead>
