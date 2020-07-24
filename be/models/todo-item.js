@@ -6,13 +6,11 @@ class TodoItems {
                 console.debug("In the constructor with data")
                 this.todo_description = Data.todo_description;
                 this.todo_responsible = Data.todo_responsible;
-                this.todo_priority = Data.todo_priority;
                 this.todo_completed = Data.todo_completed;
             } else {
                 console.debug("EMPTY DATA")
                 this.todo_description = "";
                 this.todo_responsible = "";
-                this.todo_priority = "";
                 this.todo_completed = false;
             }
         } catch (error) {
